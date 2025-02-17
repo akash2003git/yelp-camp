@@ -1,7 +1,8 @@
 <% layout('layouts/boilerplate')%>
 <link rel="stylesheet" href="/stylesheets/stars.css">
 <div class="row">
-    <div class="col-6">
+    <!-- Campground Details & Carousel -->
+    <div class="col-12 col-md-6">
         <div id="campgroundCarousel" class="carousel slide">
           <div class="carousel-inner">
             <% campground.images.forEach((img, i) => { %> 
@@ -44,8 +45,10 @@
             </div>
         </div>
     </div>
-    <div class="col-6">
-        <div id='map'></div>
+
+    <!-- Map and Reviews Section (Now Below on Mobile) -->
+    <div class="col-12 col-md-6 mt-4 mt-md-0">
+        <div id='map' class="mb-3"></div>
         <% if(currentUser) { %> 
         <h2>Leave a Review</h2>
         <form action="/campgrounds/<%=campground._id%>/reviews" method="POST" class="mb-3 validated-form" novalidate>
@@ -75,7 +78,7 @@
         </form>
         <% } %> 
         <% for(let review of campground.reviews) { %>
-        <div class="card mb-3 ">
+        <div class="card mb-3">
             <div class="card-body">
                 <h5 class="card-title"> <%= review.author.username%></h5>
                 <p class="starability-result" data-rating="<%= review.rating %>">
@@ -99,3 +102,4 @@
 </script>
 
 <script src="/javascripts/showPageMap.js"></script>
+

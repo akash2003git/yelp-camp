@@ -111,7 +111,7 @@ app.use(
         "'self'",
         "blob:",
         "data:",
-        "https://res.cloudinary.com/dqpl3oz88/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT!
+        `https://res.cloudinary.com/${process.env.CLOUDINARY_CLOUD_NAME}/`, //SHOULD MATCH YOUR CLOUDINARY ACCOUNT!
         "https://images.unsplash.com/",
         "https://api.maptiler.com/",
       ],
