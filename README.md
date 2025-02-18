@@ -8,8 +8,6 @@ Yelp Camp is a full-stack web application where users can browse, create, and re
 ![Index Page](assets/index.png)
 ![Campground Page](assets/campground.png)
 
-_(Replace the paths above with the actual paths to your images in the repository)_
-
 ## Features
 
 - User authentication & authorization (Register, Login, Logout)
