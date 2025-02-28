@@ -14,7 +14,7 @@ Yelp Camp is a full-stack web application where users can browse, create, and re
 - Add, edit, and delete campgrounds
 - Review and rate campgrounds
 - Image upload with Cloudinary
-- Map integration using Mapbox
+- Map integration using Maptiler
 - Responsive design
 
 ## Tech Stack
@@ -24,7 +24,7 @@ Yelp Camp is a full-stack web application where users can browse, create, and re
 - **Database**: MongoDB (Atlas for production, local for development)
 - **Authentication**: Passport.js
 - **File Storage**: Cloudinary
-- **Maps**: Mapbox
+- **Maps**: Maptiler
 - **Hosting**: Render
 
 ## Installation
