@@ -48,7 +48,7 @@ Yelp Camp is a full-stack web application where users can browse, create, and re
    CLOUDINARY_CLOUD_NAME=your_cloud_name
    CLOUDINARY_API_KEY=your_api_key
    CLOUDINARY_API_SECRET=your_api_secret
-   MAPBOX_TOKEN=your_mapbox_token
+   MAPTILER_API_KEY=your_maptiler_token
    DB_URL=your_atlas_collection(Ignore if you want to run locally)
    ```
 
